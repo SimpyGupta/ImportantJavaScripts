@@ -1,0 +1,10 @@
+/*Set Left Section Height According to RightSection*/
+$(document).ready(function() {
+	var dashRight = $(".dashboardsecRight").height();
+	$('.dashboardsecLeft').css('min-height', dashRight+'px');
+});
+
+$(window).resize(function(){
+	var dashRight = $(".dashboardsecRight").height();
+	$('.dashboardsecLeft').css('min-height', dashRight+'px');
+});

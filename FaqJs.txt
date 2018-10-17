@@ -1,0 +1,15 @@
+	/*------------faq---------------*/
+	$(".qu").click(function(){     
+	$(".faqDetail").slideUp(300); 
+	if($(this).parent(".cover").hasClass("active")){
+	  $(".cover").removeClass("active");
+	  $(this).next(".faqDetail").slideUp(300);  
+	 
+	}
+	else{
+	  $(".cover").removeClass("active");
+	  $(this).parent(".cover").addClass("active");
+	  $(this).next(".faqDetail").slideDown(300); 
+	  
+	}
+	});

@@ -1,0 +1,24 @@
+$("body").click(function(){
+	$(".account-dropdown").slideUp();
+});
+$(".account-dropdown").click(function(event) {
+	event.stopPropagation();
+});
+$(".forms-bar ul li a.account").click(function(event){
+	event.stopPropagation();
+	$(".forms-bar ul li a.account").toggleClass("active");
+	$(".account-dropdown").slideToggle();
+});
+
+
+/*DropDown with stop propogation*/
+$("body").click(function() {
+	$(".dashboard-header .dashboard-notification ul li ul").slideUp();
+});
+$(".dashboard-header .dashboard-notification ul li ul").click(function(event) {
+ 	event.stopPropagation();
+});
+$(".dashboard-header .dashboard-notification ul li a").click(function(event) {
+	event.stopPropagation();
+	$(".dashboard-header .dashboard-notification ul li ul").slideToggle();
+});

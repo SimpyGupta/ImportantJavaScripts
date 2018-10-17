@@ -1,0 +1,13 @@
+/*Acordian*/
+$(".menu-bar > ul > li > a").click(function(){     
+$(".menu-bar > ul > li > ul").slideUp(300); 
+if($(this).hasClass("active")){
+  $(".menu-bar > ul > li > a").removeClass("active");
+  $(this).next(".menu-bar > ul > li > ul").slideUp(300);  
+}
+else{
+  $(".menu-bar > ul > li > a").removeClass("active");
+  $(this).addClass("active");
+  $(this).next(".menu-bar > ul > li > ul").slideDown(300); 
+} 
+});

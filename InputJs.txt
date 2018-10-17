@@ -1,0 +1,12 @@
+/**For Input Js**/
+		$(".signup-form-main .form-control").val("");
+			$('.signup-form-main .form-control').blur(function()
+		{
+		if(this.value) {
+			$(this).parent(".signup-form-main").addClass('empty');
+		}
+		else
+		{
+			$(this).parent(".signup-form-main").removeClass('empty');
+		}
+});

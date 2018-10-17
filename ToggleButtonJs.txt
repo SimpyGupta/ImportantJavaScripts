@@ -1,0 +1,6 @@
+/*toggleButton*/
+
+	$("#toggleButton").click(function(){
+		$('.dashmenuBar').toggleClass('zero');
+		$(".detailedContainer").toggleClass("short");
+	});

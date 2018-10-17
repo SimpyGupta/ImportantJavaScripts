@@ -1,0 +1,4 @@
+/*mobnavBar*/
+$(".mobnavBar").click(function(){
+	$(".menuBar").slideToggle(300);
+})

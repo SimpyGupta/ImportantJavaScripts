@@ -1,0 +1,9 @@
+	/*--------tabs------*/
+	$(".tabs ul li a").on("click" , function(e){
+		 e.preventDefault();
+		var weddInd = $(this).attr('href');
+		$(".tabContent").hide(0);
+		$(weddInd).show(0);
+		$(".tabs ul li a").removeClass('active');
+		$(this).addClass('active');
+	});

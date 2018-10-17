@@ -1,0 +1,43 @@
+/*Slider*/
+var hms = $('.homeslider');
+hms.owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+	center: true,
+	navSpeed:6000,
+	smartSpeed:1500,
+	autoplaySpeed:1000,
+	autoplay:true,
+    responsive:{
+        0:{
+            items:2
+        },
+		479:{
+            items:3
+        },
+		639:{
+            items:3
+        },
+		767:{
+            items:4
+        },
+        979:{
+            items:5
+        },
+		1025:{
+            items:6
+        },
+        1171:{
+            items:7
+        }
+    }
+})
+// Go to the next item
+$('.rightArrow').click(function() {
+    hms.trigger('next.owl.carousel');
+})
+// Go to the previous item
+$('.leftArrow').click(function() {
+    hms.trigger('prev.owl.carousel');
+})

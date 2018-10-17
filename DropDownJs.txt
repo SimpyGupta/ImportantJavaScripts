@@ -1,0 +1,19 @@
+/*dropdownMenu
+		$(".dropdown").click(function(){
+			$("ul.dropdownMenu").slideToggle(300);
+		});*/
+	   
+	       $(".dropdown").click(function(){     
+		 $(".dropdownMenu").slideUp(300); 
+		 if($(this).hasClass("active")){
+		  $(".dropdown").removeClass("active");
+		  $(this).next(".dropdownMenu").slideUp(300);  
+		 
+		}
+		else{
+		  $(".dropdown").removeClass("active");
+		  $(this).addClass("active");
+		  $(this).next(".dropdownMenu").slideDown(300); 
+		  
+		}   
+		});

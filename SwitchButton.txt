@@ -1,0 +1,6 @@
+/*switch btn*/
+$(".circleBtn ").click(function(){
+	$(this).next(".onPart").toggleClass("open");
+	$(this).next(".onPart").next(".offPart").toggleClass("open");
+	
+});

@@ -1,0 +1,26 @@
+           /*Login Popup*/
+	   $(".loginpopup").click(function(){
+		$("#loginpopup").fadeIn(400);
+		$("body").addClass("loghiddens");
+		$("#loginpopup.backBg").fadeIn(300);
+	   });
+	   
+	   $(".closepop").click(function(){
+		$("#loginpopup").fadeOut(400);
+		$("body").removeClass("loghiddens");
+		$("#loginpopup").fadeOut(400);
+	   });
+	 
+	   /*Forgot Popup*/
+	   $(".forgortBtn").click(function(){
+		$("#forgotPopup").fadeIn(400);
+		$("#loginpopup").fadeOut(0);
+		$("body").addClass("loghiddens");
+		$("#forgotPopup.backBg").fadeIn(300);
+	   });
+	   
+	   $(".closeForgotpop").click(function(){
+		$("#forgotPopup").fadeOut(400);
+		$("body").removeClass("loghiddens");
+		$("#forgotPopup").fadeOut(400);
+	   });
